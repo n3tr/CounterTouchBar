@@ -26,7 +26,7 @@ class WindowController: NSWindowController {
         let touchBar = NSTouchBar()
         touchBar.delegate = self
         touchBar.customizationIdentifier = .touchBar
-        touchBar.defaultItemIdentifiers = [.label]
+        touchBar.defaultItemIdentifiers = [.label, .fixedSpaceSmall,  .otherItemsProxy]
         return touchBar
     }
 
